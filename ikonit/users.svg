@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="48"
+     height="48"
+     viewBox="0 0 48 48"
+     fill="none"
+     role="img"
+     aria-labelledby="usersTitle">
+  <title id="usersTitle">Osallistujien määrä</title>
+
+  <circle cx="19" cy="15" r="7"
+          stroke="currentColor" stroke-width="2"/>
+
+  <path d="M6 41V37
+           C6 29.8 11.8 24 19 24
+           C26.2 24 32 29.8 32 37
+           V41"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+
+  <circle cx="34" cy="17" r="5"
+          stroke="currentColor" stroke-width="2"/>
+
+  <path d="M32 27
+           C37.5 27 42 31.5 42 37
+           V40"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="32"
+     height="32"
+     viewBox="0 0 32 32"
+     fill="none"
+     role="img"
+     aria-labelledby="linkedinTitle">
+  <title id="linkedinTitle">LinkedIn</title>
+
+  <circle cx="16" cy="16" r="14"
+          stroke="currentColor" stroke-width="1.5"/>
+
+  <rect x="8" y="13" width="3.5" height="11"
+        fill="currentColor"/>
+
+  <circle cx="9.75" cy="9.5" r="2"
+          fill="currentColor"/>
+
+  <path d="M14 13H17.4V14.5
+           C18.3 13.2 19.7 12.6 21.2 12.7
+           C25 12.7 25.5 15.3 25.5 18.7
+           V24H22V19.3
+           C22 17.4 21.7 16.2 19.8 16.2
+           C17.9 16.2 17.5 17.7 17.5 19.2
+           V24H14Z"
+        fill="currentColor"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="24"
+     height="24"
+     viewBox="0 0 24 24"
+     fill="none"
+     role="img"
+     aria-labelledby="peopleTitle">
+  <title id="peopleTitle">Osallistujat</title>
+
+  <circle cx="9" cy="7" r="3"
+          stroke="currentColor" stroke-width="2"/>
+
+  <path d="M3 20V18
+           C3 14.7 5.7 12 9 12
+           C12.3 12 15 14.7 15 18
+           V20"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+
+  <circle cx="17" cy="8" r="2.5"
+          stroke="currentColor" stroke-width="2"/>
+
+  <path d="M16 13
+           C18.8 13 21 15.2 21 18
+           V20"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>

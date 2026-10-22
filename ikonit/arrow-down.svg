@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="20"
+     height="20"
+     viewBox="0 0 20 20"
+     fill="none"
+     role="img"
+     aria-labelledby="arrowTitle">
+  <title id="arrowTitle">Avaa valinta</title>
+
+  <path d="M4 7L10 13L16 7"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
