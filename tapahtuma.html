@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tapahtuma | Tapahtumakalenteri</title>
+  <link rel="icon" type="image/svg+xml" href="Ikonit/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="sivuston-yla">
+    <a class="logo" href="index.html">
+      <img src="Ikonit/logo.svg" alt="" width="64" height="48">
+      <span>Tapahtumakalenteri</span>
+    </a>
+    <button class="valikko-nappi" type="button" aria-expanded="false" aria-controls="paavalikko" aria-label="Avaa valikko">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="paavalikko" class="paavalikko" aria-label="Päävalikko">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="index.html#tapahtumat" aria-current="page">Tapahtumat</a></li>
+        <li><a href="index.html?suosikit#tapahtumat">Suosikit</a></li>
+        <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="sisalto">
+    <a class="takaisin" href="index.html#tapahtumat">← Takaisin tapahtumiin</a>
+
+    <article class="yksityiskohta" id="tapahtuma" aria-live="polite">
+      <p id="virhe" role="alert" hidden></p>
+      <img class="yksityiskohta-kuva" id="kuva" src="" alt="" hidden>
+      <div class="yksityiskohta-tiedot" id="tiedot" hidden>
+        <div class="otsikkorivi">
+          <h1 id="nimi"></h1>
+          <button type="button" class="suosikki-nappi" id="suosikki-nappi" aria-pressed="false">
+            <img src="Ikonit/heart-outline.svg" alt="" width="28" height="28">
+          </button>
+        </div>
+        <ul class="meta">
+          <li class="kategoria" id="kategoria"></li>
+          <li class="tieto"><img src="Ikonit/location.svg" alt="" width="18" height="18"><span id="meta-paikkakunta"></span></li>
+          <li class="tieto"><img src="Ikonit/people.svg" alt="" width="18" height="18"><span id="meta-osallistujat"></span></li>
+        </ul>
+        <dl class="tietopaneeli">
+          <div><dt>Kategoria</dt><dd id="tieto-kategoria"></dd></div>
+          <div><dt>Paikkakunta</dt><dd id="tieto-paikkakunta"></dd></div>
+          <div><dt>Osallistujia</dt><dd id="tieto-osallistujat"></dd></div>
+        </dl>
+      </div>
+    </article>
+  </main>
+
+  <footer class="sivuston-ala" id="yhteystiedot">
+    <p>© 2026 Tapahtumakalenteri</p>
+    <ul class="alalinkit">
+      <li><a href="#">Tietosuojaseloste</a></li>
+      <li><a href="#">Käyttöehdot</a></li>
+    </ul>
+    <ul class="some">
+      <li><a href="#"><img src="Ikonit/facebook.svg" alt="Facebook" width="32" height="32"></a></li>
+      <li><a href="#"><img src="Ikonit/instagram.svg" alt="Instagram" width="32" height="32"></a></li>
+      <li><a href="#"><img src="Ikonit/linkedin.svg" alt="LinkedIn" width="32" height="32"></a></li>
+    </ul>
+  </footer>
+
+  <script src="js/yhteiset.js"></script>
+  <script src="js/tapahtuma.js"></script>
+</body>
+</html>
