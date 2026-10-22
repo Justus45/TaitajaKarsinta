@@ -1,3 +1,6 @@
+// AI-KÄYTTÖ ALKAA
+// Työkalu: Claude (Anthropic)
+// Tarkoitus: yksityiskohtasivun logiikka (tapahtuman valinta URL-parametrilla ja tietojen näyttö)
 
 const virhe = document.getElementById('virhe');
 
@@ -16,6 +19,9 @@ function naytaTapahtuma(t) {
   document.getElementById('kategoria').textContent = t.kategoria;
   document.getElementById('meta-paikkakunta').textContent = t.paikkakunta;
   document.getElementById('meta-osallistujat').textContent = `${t.osallistujat} osallistujaa`;
+  const kuvaus = document.getElementById('kuvaus');
+  kuvaus.textContent = t['tarkemmat tiedot'] ?? '';
+  kuvaus.hidden = !kuvaus.textContent;
   document.getElementById('tieto-kategoria').textContent = t.kategoria;
   document.getElementById('tieto-paikkakunta').textContent = t.paikkakunta;
   document.getElementById('tieto-osallistujat').textContent = t.osallistujat;
@@ -38,3 +44,4 @@ haeTapahtumat()
     else naytaVirhe('Tapahtumaa ei löytynyt.');
   })
   .catch(() => naytaVirhe('Tapahtuman lataus epäonnistui. Käynnistä sivusto palvelimen kautta (docker compose up).'));
+// AI-KÄYTTÖ PÄÄTTYY
